@@ -51,7 +51,7 @@ src/
 
 ## Observações
 - Certifique-se que a API esteja rodando localmente em `https://localhost:5001` (ou configure a URL base no `environment.ts`).
-- O projeto é apenas uma interface para testes do backend.
+- O projeto é apenas uma interface para testes do [backend](https://github.com/mauridf/BlogApi).
 
 ---
 Projeto criado para fins de estudo e avaliação técnica.
