@@ -1,59 +1,57 @@
-# BlogFrontend
+# BlogApp Frontend (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+Frontend simples para o projeto **BlogApp**, utilizado para testar a API feita em .NET. Permite cadastro, login e criação de postagens.
 
-## Development server
+## Tecnologias
+- Angular 17 (standalone)
+- TypeScript
+- RxJS
+- CSS básico
 
-To start a local development server, run:
+## Funcionalidades
+- Cadastro de usuário
+- Login (simples, baseado em localStorage)
+- Criação de postagens
+- Listagem de postagens
+- Logout
+- Proteção de rotas com AuthGuard
+
+## Instalação
+
+```bash
+npm install
+```
+
+## Execução
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse `http://localhost:4200` no navegador.
 
-## Code scaffolding
+## Estrutura de Diretórios
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+src/
+  app/
+    components/
+      login/
+      register/
+      home/
+    services/
+      auth.service.ts
+      post.service.ts
+    guards/
+      auth.guard.ts
+    app.routes.ts
+    app.ts
+  main.ts
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Observações
+- Certifique-se que a API esteja rodando localmente em `https://localhost:5001` (ou configure a URL base no `environment.ts`).
+- O projeto é apenas uma interface para testes do backend.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Projeto criado para fins de estudo e avaliação técnica.

@@ -1,0 +1,15 @@
+<h2>Cadastro</h2>
+<form (ngSubmit)="register()" #registerForm="ngForm">
+  <label for="username">Usuário</label>
+  <input id="username" name="username" [(ngModel)]="user.username" required />
+
+  <label for="password">Senha</label>
+  <input id="password" name="password" type="password" [(ngModel)]="user.password" required />
+
+  <button type="submit" [disabled]="registerForm.invalid">Cadastrar</button>
+</form>
+
+<p>Já tem conta? <a routerLink="/login">Fazer login</a></p>
+
+<p *ngIf="message" style="color: green;">{{ message }}</p>
+<p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
